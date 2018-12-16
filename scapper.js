@@ -7,7 +7,7 @@ function get_newmails()
   var _filterdays = 'newer_than:1d ';
   var _messages = [];
   
-  var _conffile = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/1TqwILPHvbcjqP6Xm5TiDAdT-UDtiwT0jMpHmR70urgE/edit#gid=0');
+  var _conffile = SpreadsheetApp.openByUrl('https://url');
  
   var _senderlist = _conffile.getActiveSheet().getRange("Sheet1!B2:B20").getValues();
   var _subjectlist = _conffile.getActiveSheet().getRange("Sheet1!C2:C20").getValues();
@@ -144,7 +144,7 @@ This function returns property name and service provider based on account number
 **/
 function get_proptertyname(_acctnum)
 {
-  var _conffile = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/1TqwILPHvbcjqP6Xm5TiDAdT-UDtiwT0jMpHmR70urgE/edit#gid=0');
+  var _conffile = SpreadsheetApp.openByUrl('https://url');
   var _accountnum = _conffile.getActiveSheet().getRange("Sheet2!C2:C50").getValues();
   
   var _accountnumlist = [];
@@ -184,7 +184,7 @@ function extract_detail()
   var _today = new Date().toISOString().slice(0,10);
   var _detail = '';
   
-  var _conffile = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/1bXIjmYvvLSwWhe7h8VIQcgKNu8TF6iG1HIwjW52qXqo/edit#gid=0');
+  var _conffile = SpreadsheetApp.openByUrl('https:url');
   var _logsheet = _conffile.getActiveSheet();
   
   var _messages = get_newmails();
